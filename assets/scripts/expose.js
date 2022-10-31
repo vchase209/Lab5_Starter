@@ -45,6 +45,8 @@ function init() {
 
   playSound.addEventListener('click', (event) => {
     aud.play();
-    confetti.addConfetti();
+    if (horn.value == 'party-horn') {
+      confetti.addConfetti();
+    }
   })
 }
